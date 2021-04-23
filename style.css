@@ -1,58 +1,52 @@
 ﻿body {
-    background-color: beige;
+    background-color: grey;
+    font-family: Garamond;
+    font-size: larger;
     margin: 0;
 }
 
 #nav {
     background-color: crimson;
+    border-bottom-right-radius: 50px;
     float: left;
-    height: 100vh;
+    height: 100%;
 }
 
 #nav_ul {
-    margin-top: 50px;
+    float: left;
     list-style-type: none;
 }
 
 .nav_li a {
     /*text*/
     color: crimson;
-    font-family: fantasy;
+    font-family: 'Trebuchet MS';
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-
     /*formatting*/
     background: white;
+    border-radius: 50px;
+    display: block;
     margin: 25px;
     padding: 1em 1.5em;
-    display: block;
-    border-radius: 50px;
 }
 
     .nav_li a:hover {
-        transition: transform 0.5s ease-in-out;
+        transition: transform 0.1s ease-in-out;
         transform: scale(1.25);
-        background-color: aqua;
-        color: black;
     }
 
-    .contents {
-        float: left;
-        margin: 50px;
-    }
-
-#Information {
-    padding-left: 25px;
-    background-color: white;
-    border: solid 5px black;
-    box-shadow: 0 4px 8px 0 black;
-    margin-top: 10px;
-    margin-left: 250px;
-    width: 250px;
+.contents {
+    background: white;
+    border-radius: 50px;
+    display: inline-block;
+    float: left;
+    margin: 50px;
+    padding: 50px;
+    position: absolute;
 }
 
-    #Information:hover {
-        transition: transform 0.5s ease-in-out;
-        transform: scale(1.25);
-    }
+.img_projects {
+    width: 25vw;
+}
